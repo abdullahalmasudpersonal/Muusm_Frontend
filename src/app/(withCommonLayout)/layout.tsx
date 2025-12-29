@@ -6,11 +6,11 @@ import React from "react";
 
 const CommonLayout = ({ children }: { children: React.ReactNode }) => {
     return (
-        <div style={{margin:'0'}}>
+        <>
             <Navber />
             <Box> {children}</Box>
             <Footer />
-        </div>
+        </>
     );
 };
 

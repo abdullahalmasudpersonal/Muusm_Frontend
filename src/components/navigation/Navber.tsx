@@ -13,7 +13,6 @@ const logoStyle = {
 };
 
 const Navber = () => {
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 
   return (
     <AppBar position="static" sx={{

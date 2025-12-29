@@ -1,6 +1,6 @@
 import React from "react";
 
-const layout = ({ children }: { children: React.ReactNode }) => {
+const AuthLayout = ({ children }: { children: React.ReactNode }) => {
     return (
         <div>
             {children}
@@ -8,4 +8,4 @@ const layout = ({ children }: { children: React.ReactNode }) => {
     );
 };
 
-export default layout;
+export default AuthLayout;
