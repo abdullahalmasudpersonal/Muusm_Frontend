@@ -21,7 +21,7 @@ const Navber = () => {
       // backgroundImage: "none",
       // mt: 2,
     }}>
-      <Container maxWidth='lg'>
+      <Container maxWidth='lg' disableGutters>
         <Toolbar>
           <Link href="/">
             <Image src={logo} style={logoStyle} alt="logo of Flat Share" />

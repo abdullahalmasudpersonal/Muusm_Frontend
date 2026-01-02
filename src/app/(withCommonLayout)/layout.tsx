@@ -1,4 +1,4 @@
-import Footer from "@/components/navigation/Footer";
+import Footer from "@/components/navigation/Footer/Footer";
 import Navber from "@/components/navigation/Navber";
 import { Box } from "@mui/material";
 import React from "react";
