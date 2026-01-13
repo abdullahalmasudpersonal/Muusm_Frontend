@@ -3,19 +3,28 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <Box sx={{ backgroundColor: 'rgba(23, 56, 117, 1)', minHeight: '350px', display: 'flex', flexDirection: 'column' }}>
-            <Container maxWidth='lg' disableGutters>
-                <Box>
+        <Box sx={{ backgroundColor: 'rgb(6, 36, 92)', minHeight: '350px', display: 'flex', flexDirection: 'column', justifyContent:'space-between' }}>
+            <Container maxWidth='lg' disableGutters sx={{display:'flex',justifyContent:'space-between',}}>
+                <Box sx={{backgroundColor:'rgb(43, 77, 139)'}}>
+                    fg
+                </Box>
+                <Box sx={{backgroundColor:'rgb(43, 77, 139)'}}>
+                    fg
+                </Box>
+                <Box sx={{backgroundColor:'rgb(43, 77, 139)'}}>
+                    fg
+                </Box>
+                <Box sx={{backgroundColor:'rgb(43, 77, 139)'}}>
                     fg
                 </Box>
             </Container>
-            <Box sx={{ backgroundColor: 'rgba(32, 50, 83, 1)', }}>
-                <Container maxWidth='lg' disableGutters >
-                    fg
+            <Box sx={{ backgroundColor: 'rgb(6, 57, 151)', }}>
+                <Container maxWidth='lg'  sx={{ minHeight: '80px', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', color: 'rgb(193, 218, 255)', paddingY:2, fontWeight:700 }}>
+                    © 2026 Mafsar Ul Ulum Sinior Madrasah. All Rights Reserved. Design, Development and Maintenance by <span style={{color:'#8eb2ff', }}>&nbsp;Abdullah al masud</span>
                 </Container>
             </Box>
 
-            {/* <Box className='container-xl' sx={{ backgroundColor: 'rgba(23, 56, 117, 1)', minHeight: '350px', display: 'flex', flexDirection: 'column' }}>
+            {/* <Box className='container-xl' sx={{ backgroundColor: 'rgb(7, 7, 8)', minHeight: '350px', display: 'flex', flexDirection: 'column' }}>
             <Box sx={{
                 display: 'flex',
                 justifyContent: 'space-around',
