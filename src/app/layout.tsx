@@ -1,7 +1,9 @@
-import { Hind_Siliguri, Inter } from 'next/font/google'
-import './globals.css'
+import { Hind_Siliguri, Inter } from 'next/font/google';
+import './globals.css';
 import ReduxProvider from "@/components/providers/ReduxProvider";
 import type { Metadata } from "next";
+import { getTheme } from './theme/theme';
+import { ThemeProvider } from '@mui/material/styles';
 export const metadata: Metadata = {
   title: "Mafser Ul Ulum Senior Madrasah",
   description: "Is is a Islamic Educational Instituions",
@@ -25,7 +27,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" suppressHydrationWarning className={`${inter.variable} ${hind.variable}`}>
       <body suppressHydrationWarning>
-        <ReduxProvider>{children}</ReduxProvider>
+        {/* <ThemeProvider theme={{ getTheme }}> */}
+          <ReduxProvider>
+            {children}
+          </ReduxProvider>
+        {/* </ThemeProvider> */}
       </body>
     </html>
   );

@@ -1,30 +1,49 @@
+"use client";
 import { Box, Container, Typography } from '@mui/material';
-import React from 'react';
+import Grid from "@mui/material/Grid";
 
 const Footer = () => {
     return (
-        <Box sx={{ backgroundColor: 'rgb(6, 36, 92)', minHeight: '350px', display: 'flex', flexDirection: 'column', justifyContent:'space-between' }}>
-            <Container maxWidth='lg' disableGutters sx={{display:'flex',justifyContent:'space-between',}}>
-                <Box sx={{backgroundColor:'rgb(43, 77, 139)'}}>
-                    fg
-                </Box>
-                <Box sx={{backgroundColor:'rgb(43, 77, 139)'}}>
-                    fg
-                </Box>
-                <Box sx={{backgroundColor:'rgb(43, 77, 139)'}}>
-                    fg
-                </Box>
-                <Box sx={{backgroundColor:'rgb(43, 77, 139)'}}>
-                    fg
-                </Box>
-            </Container>
-            <Box sx={{ backgroundColor: 'rgb(6, 57, 151)', }}>
-                <Container maxWidth='lg'  sx={{ minHeight: '80px', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', color: 'rgb(193, 218, 255)', paddingY:2, fontWeight:700 }}>
-                    © 2026 Mafsar Ul Ulum Sinior Madrasah. All Rights Reserved. Design, Development and Maintenance by <span style={{color:'#8eb2ff', }}>&nbsp;Abdullah al masud</span>
+        <Box sx={{ background: 'rgb(61, 77, 107)', minHeight: '350px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+            <Box sx={{ background: 'rgb(19, 57, 128)', paddingY: 4, }}>
+                <Container maxWidth='lg' sx={{ display: 'flex', justifyContent: 'space-between', }}>
+                    <Grid container spacing={3}>
+                        <Grid size={{ md: 3, sm: 6, xs: 12 }}>
+                            <Box sx={{ background: "rgb(43,77,139)", p: 2, color: "#fff" }}>
+                                hihhhhhhhhhhhhhhhhhh hhhhhhhhhhh hhhhhhhhhhh hhhhhhhhhhhhhh hhhhhhhhhhhhhhhhhh
+                            </Box>
+                        </Grid>
+                        <Grid size={{ md: 3, sm: 6, xs: 12 }}>
+                            <Box sx={{ background: "rgb(43,77,139)", p: 2, color: "#fff" }}>
+                                hihhhhhhhhhhhhhhhhhh hhhhhhhhhhh hhhhhhhhhhh hhhhhhhhhhhhhh hhhhhhhhhhhhhhhhhh
+                            </Box>
+                        </Grid>
+                        <Grid size={{ md: 3, sm: 6, xs: 12 }}>
+                            <Box sx={{ background: "rgb(43,77,139)", p: 2, color: "#fff" }}>
+                                hihhhhhhhhhhhhhhhhhh hhhhhhhhhhh hhhhhhhhhhh hhhhhhhhhhhhhh hhhhhhhhhhhhhhhhhh
+                            </Box>
+                        </Grid>
+                        <Grid size={{ md: 3, sm: 6, xs: 12 }}>
+                            <Box sx={{ background: "rgb(43,77,139)", p: 2, color: "#fff" }}>
+                                hihhhhhhhhhhhhhhhhhh hhhhhhhhhhh hhhhhhhhhhh hhhhhhhhhhhhhh hhhhhhhhhhhhhh
+                            </Box>
+                        </Grid>
+                    </Grid>
                 </Container>
             </Box>
+            <Box sx={{ background: 'rgb(6, 57, 151)', }}>
+                <Container maxWidth='lg' sx={{ minHeight: '80px', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', paddingY: 2, }}>
+                    <Typography sx={{ fontWeight: 700, color: 'rgb(193, 218, 255)', }}>  © 2026 Mafsar Ul Ulum Sinior Madrasah. All Rights Reserved. Design, Development and Maintenance by <span style={{ color: '#dda60d', }}>&nbsp;Abdullah al masud</span></Typography>
+                </Container>
+            </Box>
+        </Box>
+    );
+};
 
-            {/* <Box className='container-xl' sx={{ backgroundColor: 'rgb(7, 7, 8)', minHeight: '350px', display: 'flex', flexDirection: 'column' }}>
+export default Footer;
+
+
+{/* <Box className='container-xl' sx={{ backgroundColor: 'rgb(7, 7, 8)', minHeight: '350px', display: 'flex', flexDirection: 'column' }}>
             <Box sx={{
                 display: 'flex',
                 justifyContent: 'space-around',
@@ -77,8 +96,3 @@ const Footer = () => {
                     <Typography sx={{ height: '70px', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>© 2026 Mafsar Ul Ulum Sinior Madrasah. All Rights Reserved. Design, Development and Maintenance by &nbsp;<span style={{ color: 'rgba(253, 187, 132, 1)', fontWeight: '700' }}>Abdullah al masud</span></Typography>
             </Box>
         </Box> */}
-        </Box>
-    );
-};
-
-export default Footer;
