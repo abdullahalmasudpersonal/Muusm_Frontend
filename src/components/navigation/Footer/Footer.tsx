@@ -1,16 +1,23 @@
 "use client";
 import { Box, Container, Typography } from '@mui/material';
 import Grid from "@mui/material/Grid";
+import Image from 'next/image';
+import logo from '@/assets/logo/logo.png';
 
 const Footer = () => {
     return (
         <Box sx={{ background: 'rgb(61, 77, 107)', minHeight: '350px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-            <Box sx={{ background: 'rgb(19, 57, 128)', paddingY: 4, }}>
+            <Box sx={{ background: 'rgb(25, 0, 83)', paddingY: 4, }}>
                 <Container maxWidth='lg' sx={{ display: 'flex', justifyContent: 'space-between', }}>
                     <Grid container spacing={3}>
                         <Grid size={{ md: 3, sm: 6, xs: 12 }}>
                             <Box sx={{ background: "rgb(43,77,139)", p: 2, color: "#fff" }}>
-                                hihhhhhhhhhhhhhhhhhh hhhhhhhhhhh hhhhhhhhhhh hhhhhhhhhhhhhh hhhhhhhhhhhhhhhhhh
+                                <Box>
+                                    <Typography variant='h6' fontWeight='bold' pb='15px'>Useful Links</Typography>
+                                </Box>
+                                <Box>
+                                    <Typography>Importent Link</Typography>
+                                </Box>
                             </Box>
                         </Grid>
                         <Grid size={{ md: 3, sm: 6, xs: 12 }}>
@@ -24,8 +31,18 @@ const Footer = () => {
                             </Box>
                         </Grid>
                         <Grid size={{ md: 3, sm: 6, xs: 12 }}>
-                            <Box sx={{ background: "rgb(43,77,139)", p: 2, color: "#fff" }}>
-                                hihhhhhhhhhhhhhhhhhh hhhhhhhhhhh hhhhhhhhhhh hhhhhhhhhhhhhh hhhhhhhhhhhhhh
+                            <Box sx={{ background: "rgba(43, 77, 139, 0)", p: 2, display: 'flex', flexDirection: 'column', }}>
+                                <Box sx={{ display: 'flex', justifyContent: 'center', pb: 3 }}>
+                                    <Image src={logo} alt="Mafsar Ul Ulum Sinior Madrasah" width={72} height={60} />
+                                </Box>
+                                <Box sx={{ paddingLeft: 3, }}>
+                                    <Typography>Baridhara, Radhanagor</Typography>
+                                    <Typography>Bhandaria, pirojpur</Typography>
+                                    <Typography>Phone: +880-1717420439</Typography>
+                                    <Typography>Phone: +880-1717420439</Typography>
+                                    <Typography>Email: muusm58@gmail.com</Typography>
+                                </Box>
+
                             </Box>
                         </Grid>
                     </Grid>
