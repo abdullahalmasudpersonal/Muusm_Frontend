@@ -25,12 +25,13 @@ const hind = Hind_Siliguri({
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${inter.variable} ${hind.variable}`}>
+    <html lang="en" suppressHydrationWarning > 
+      {/* <html lang="en" suppressHydrationWarning className={`${inter.variable} ${hind.variable}`}> */}
       <body suppressHydrationWarning>
         {/* <ThemeProvider theme={{ getTheme }}> */}
-          <ReduxProvider>
-            {children}
-          </ReduxProvider>
+        <ReduxProvider>
+          {children}
+        </ReduxProvider>
         {/* </ThemeProvider> */}
       </body>
     </html>
