@@ -117,7 +117,7 @@ const Footer = () => {
                             <Grid size={{ md: 3, sm: 6, xs: 12 }}>
                                 <Box sx={{ background: "rgba(43, 77, 139, 0)", p: 2, display: 'flex', flexDirection: 'column', }}>
                                     <Box sx={{ display: 'flex', justifyContent: 'center', pb: 3 }}>
-                                        <Image src={logo} alt="Mafsar Ul Ulum Sinior Madrasah" width={72} height={60} />
+                                        <Image src={logo} width={72} height={60} alt="Mafsar Ul Ulum Sinior Madrasah"  />
                                     </Box>
                                     <Box sx={{ paddingLeft: 3, }}>
                                         <Typography>Baridhara, Radhanagor</Typography>
@@ -151,6 +151,7 @@ const Footer = () => {
                         </Grid>
                     </Container>
                 </Box>
+
                 <Box sx={{ background: 'rgba(0, 57, 122, 0.71)', }}>
                     <Container maxWidth='lg' sx={{ minHeight: '80px', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', paddingY: 2, }}>
                         <Typography sx={{ fontWeight: 700, color: 'rgb(193, 218, 255)', }}>  © 2026 Mafsar Ul Ulum Sinior Madrasah. All Rights Reserved. Design, Development and Maintenance by <span style={{ color: '#dda60d', }}>&nbsp;Abdullah al masud</span></Typography>

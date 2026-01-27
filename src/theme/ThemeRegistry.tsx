@@ -9,13 +9,8 @@ export default function ThemeRegistry({ children, }: { children: React.ReactNode
 
   const theme = React.useMemo(() => Theme(mode), [mode]);
 
-  // const cache = createCache({
-  //   key: 'mui',
-  //   prepend: true,
-  // });
-
   return (
-    <AppRouterCacheProvider options={{ key: 'mui' }} /* value={cache} */ >
+    <AppRouterCacheProvider options={{ key: 'mui' }} >
       <ThemeProvider theme={theme}>
         <CssBaseline />
         {children}

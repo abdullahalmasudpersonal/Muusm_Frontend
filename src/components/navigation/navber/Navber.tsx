@@ -22,10 +22,10 @@ const Navber = () => {
       // mt: 2,
     }}>
       <Container maxWidth='lg' disableGutters>
-        <Toolbar>
-          <Link href="/">
-            <Image src={logo} style={logoStyle} alt="logo of Flat Share" />
-          </Link>
+        <Toolbar sx={{ display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'start', }}>
+            {/* <Image src={logo} width={50} height={50} style={logoStyle} alt="logo of Flat Share" /> */}
+          {/* <Link href="/">g fgfgj rfhg
+          </Link> */}
         </Toolbar>
       </Container>
     </AppBar>
